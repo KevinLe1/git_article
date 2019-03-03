@@ -25,7 +25,7 @@ To `git push`, you just need to be up-to-date with the remote repository. So pul
 
 Merge commits are a part of working with remotes that might be confusing at first. If both the remote repository and your local repository have commits since your last `git pull`, Git will automatically merge the divergent changes from the branching point of your last pull and prompt you to make a merge commit.
 
-![Diagram showing merge](a.jpg)
+![Diagram showing merge](diagram.jpg)
 
 If you look at the commit log after a merge commit, you'll see that in addition to the commit's own hash, it lists the hashes of its two immediate parents.
 ```
