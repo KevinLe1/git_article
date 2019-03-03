@@ -16,7 +16,7 @@ When collaborating on a single branch, you'll need to have a remote set up. All 
 
 You'll need a clean working tree in order to `git pull`. If you have untracked files, you *should* be fine (as long as none of the changes you're pulling would overwrite them).  If you have any uncommited changes to tracked files, you'll need to handle those. You have three main options:
 - commit them,
-- `git stash` to temporarily store them away and `git stash pop` to restore them after your pull (more on this later),
+- `git stash` to temporarily store them away and `git stash pop` to restore them after your pull,
 - `git reset --hard` to reset all of your files to their status as of your last commit.
 
 To `git push`, you just need to be up-to-date with the remote repository. So pull before you push!
@@ -25,7 +25,7 @@ To `git push`, you just need to be up-to-date with the remote repository. So pul
 
 Merge commits are a part of working with remotes that might be confusing at first. If both the remote repository and your local repository have commits since your last `git pull`, Git will automatically merge the divergent changes from the branching point of your last pull and prompt you to make a merge commit.
 
-![Diagram showing merge](diagram.jpg)
+![Diagram showing merge](a.jpg)
 
 If you look at the commit log after a merge commit, you'll see that in addition to the commit's own hash, it lists the hashes of its two immediate parents.
 ```
@@ -201,6 +201,6 @@ Once you create the pull request, others can comment on it or even directly add 
 
 ![Merging a pull request](merge_me.png)
 
-#### Wrapping up
+### Wrapping up
 
-Obviously, there's a lot more to Git 
+This should cover the basic workflows you'll need to work comfortably with branches. If you're itching to learn about more advanced Git workflows, I'd recommend reading up on [stashing](https://git-scm.com/book/en/v1/Git-Tools-Stashing), [more complex branch management](https://git-scm.com/book/en/v1/Git-Branching-Branch-Management), or [rebasing](https://git-scm.com/book/en/v1/Git-Branching-Rebasing).
